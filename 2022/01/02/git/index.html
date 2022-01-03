@@ -498,7 +498,7 @@ git config --global user.email <span class="token string">"email@example.com"</s
 <li><p>要重返未来，用<code>git reflog</code>查看命令历史，以便确定要回到未来的哪个版本。</p>
 </li>
 </ul>
-<h2 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h2><p><img src="https://www.liaoxuefeng.com/files/attachments/919020037470528/0" alt="git-repo"></p>
+<h2 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h2><p><img src="https://img-blog.csdn.net/20151030110206984?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="git-repo"></p>
 <h2 id="管理修改"><a href="#管理修改" class="headerlink" title="管理修改"></a>管理修改</h2><p>Git跟踪修改而非文件。</p>
 <h2 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h2><p>场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令<code>git checkout -- file</code>。撤销后的版本为最近一次<code>git add</code>或者<code>git commit</code>的结果。</p>
 <p>场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令<code>git reset HEAD &lt;file&gt;</code>把暂存区的修改撤销掉，就回到了场景1，第二步按场景1操作。</p>
@@ -510,12 +510,12 @@ git config --global user.email <span class="token string">"email@example.com"</s
 <p>关联后，使用命令<code>git push -u origin master</code>第一次推送master分支的所有内容；</p>
 <p>此后，每次本地提交后，只要有必要，就可以使用命令<code>git push origin master</code>推送最新修改；</p>
 <p>如果添加的时候地址写错了，或者就是想删除远程库，可以用<code>git remote rm &lt;name&gt;</code>命令。使用前，建议先用<code>git remote -v</code>查看远程库信息：</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git remote -v
+<pre class="line-numbers language-git" data-language="git"><code class="language-git">git remote -v
 origin  git@github.com:michaelliao/learn-git.git (fetch)
 origin  git@github.com:michaelliao/learn-git.git (push)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>然后，根据名字删除，比如删除<code>origin</code>：</p>
-<pre class="line-numbers language-none"><code class="language-none">$ git remote rm origin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-git" data-language="git"><code class="language-git"><span class="token command">$ git remote rm origin</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>此处的“删除”其实是解除了本地和远程的绑定关系，并不是物理上删除了远程库。远程库本身并没有任何改动。要真正删除远程库，需要登录到GitHub，在后台页面找到删除按钮再删除。</p>
 <h2 id="从远程库克隆"><a href="#从远程库克隆" class="headerlink" title="从远程库克隆"></a>从远程库克隆</h2><p>要克隆一个仓库，首先必须知道仓库的地址，然后使用<code>git clone</code>命令克隆。</p>
@@ -1031,14 +1031,19 @@ origin  git@github.com:michaelliao/learn-git.git (push)<span aria-hidden="true" 
             <br>
             
         </div>
-        <div class="col s12 m4 l4 social-link social-statis">
+        <div class="col s12 m4 l4 social-link social-statis"><!-- 
     <a href="https://github.com/vhlk76" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+ -->
+
+    <a href="https://github.com/vhlk76" target="_blank">
         <i class="fab fa-github"></i>
     </a>
 
 
 
-    <a href="mailto:438702748@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+    <a href="mailto:438702748@qq.com" target="_blank">
         <i class="fas fa-envelope-open"></i>
     </a>
 
@@ -1048,7 +1053,7 @@ origin  git@github.com:michaelliao/learn-git.git (push)<span aria-hidden="true" 
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=438702748" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 438702748" data-position="top" data-delay="50">
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=438702748" target="_blank">
         <i class="fab fa-qq"></i>
     </a>
 
@@ -1058,7 +1063,7 @@ origin  git@github.com:michaelliao/learn-git.git (push)<span aria-hidden="true" 
 
 
 
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+    <a href="/atom.xml" target="_blank">
         <i class="fas fa-rss"></i>
     </a>
 
