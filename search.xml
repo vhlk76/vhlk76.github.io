@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>plt配合brokenaxes实现坐标轴截断</title>
+      <link href="/2022/01/03/plt-pei-he-brokenaxes-shi-xian-zuo-biao-zhou-jie-duan/"/>
+      <url>/2022/01/03/plt-pei-he-brokenaxes-shi-xian-zuo-biao-zhou-jie-duan/</url>
+      
+        <content type="html"><![CDATA[<h1 id="brokenaxes"><a href="#brokenaxes" class="headerlink" title="brokenaxes"></a>brokenaxes</h1><p><a href="https://github.com/bendichter/brokenaxes">bendichter/brokenaxes: Create matplotlib plots with broken axes (github.com)</a></p><p>brokenaxes是一个python扩展包，可以用来实现坐标轴的截断。效果如下：</p><img title="" src="https://raw.githubusercontent.com/bendichter/brokenaxes/master/example1.png" alt="example1" data-align="center"><p>基本代码如下：</p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt<span class="token keyword">from</span> brokenaxes <span class="token keyword">import</span> brokenaxes<span class="token keyword">import</span> numpy <span class="token keyword">as</span> npfig <span class="token operator">=</span> plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span>bax <span class="token operator">=</span> brokenaxes<span class="token punctuation">(</span>xlims<span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">.1</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">.4</span><span class="token punctuation">,</span> <span class="token number">.7</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> ylims<span class="token operator">=</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">.7</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token number">.79</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> hspace<span class="token operator">=</span><span class="token number">.05</span><span class="token punctuation">)</span>x<span class="token punctuation">,</span> y <span class="token operator">=</span> <span class="token boolean">None</span><span class="token punctuation">,</span> <span class="token boolean">None</span><span class="token comment"># set x, y = something you need</span>bax<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'&lt;plot_label&gt;'</span><span class="token punctuation">)</span>bax<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> label<span class="token operator">=</span><span class="token string">'&lt;bar_label&gt;'</span><span class="token punctuation">)</span>bax<span class="token punctuation">.</span>legend<span class="token punctuation">(</span><span class="token punctuation">)</span>bax<span class="token punctuation">.</span>set_xlabel<span class="token punctuation">(</span><span class="token string">'&lt;x_label&gt;'</span><span class="token punctuation">)</span>bax<span class="token punctuation">.</span>set_ylabel<span class="token punctuation">(</span><span class="token string">'&lt;y_label&gt;'</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><code>brokenaxes(xlims=((0, .1), (.4, .7)), ylims=((-1, .7), (.79, 1)), hspace=.05)</code> 这里需要截断x轴，就加入xlims，不需要就不用加。hspace表示截断后两个轴之间的距离。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 绘图 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> plt </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Summary of git</title>
       <link href="/2022/01/02/git/"/>
       <url>/2022/01/02/git/</url>

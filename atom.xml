@@ -6,7 +6,7 @@
   <link href="https://vhlk76.github.io/atom.xml" rel="self"/>
   
   <link href="https://vhlk76.github.io/"/>
-  <updated>2022-01-03T03:05:26.122Z</updated>
+  <updated>2022-01-03T04:40:38.414Z</updated>
   <id>https://vhlk76.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>plt配合brokenaxes实现坐标轴截断</title>
+    <link href="https://vhlk76.github.io/2022/01/03/plt-pei-he-brokenaxes-shi-xian-zuo-biao-zhou-jie-duan/"/>
+    <id>https://vhlk76.github.io/2022/01/03/plt-pei-he-brokenaxes-shi-xian-zuo-biao-zhou-jie-duan/</id>
+    <published>2022-01-03T04:29:02.000Z</published>
+    <updated>2022-01-03T04:40:38.414Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;brokenaxes&quot;&gt;&lt;a href=&quot;#brokenaxes&quot; class=&quot;headerlink&quot; title=&quot;brokenaxes&quot;&gt;&lt;/a&gt;brokenaxes&lt;/h1&gt;&lt;p&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="绘图" scheme="https://vhlk76.github.io/categories/%E7%BB%98%E5%9B%BE/"/>
+    
+    
+    <category term="plt" scheme="https://vhlk76.github.io/tags/plt/"/>
+    
+  </entry>
   
   <entry>
     <title>Summary of git</title>
