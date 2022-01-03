@@ -466,7 +466,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="brokenaxes"><a href="#brokenaxes" class="headerlink" title="brokenaxes"></a>brokenaxes</h2><p><a target="_blank" rel="noopener" href="https://github.com/bendichter/brokenaxes">bendichter/brokenaxes: Create matplotlib plots with broken axes (github.com)</a></p>
+                <h1 id=""><a href="#" class="headerlink" title=""></a></h1><p><a target="_blank" rel="noopener" href="https://github.com/bendichter/brokenaxes">bendichter/brokenaxes: Create matplotlib plots with broken axes (github.com)</a></p>
 <p>brokenaxes是一个python扩展包，可以用来实现坐标轴的截断。效果如下：</p>
 <img title="" src="https://raw.githubusercontent.com/bendichter/brokenaxes/master/example1.png" alt="example1" data-align="center">
 
@@ -775,8 +775,8 @@ bax<span class="token punctuation">.</span>set_ylabel<span class="token punctuat
             tocSelector: '#toc-content',
             contentSelector: '#articleContent',
             headingsOffset: -($(window).height() * 0.4 - 45),
-            collapseDepth: Number('0'),
-            headingSelector: 'h2, h3, h4'
+            collapseDepth: Number('3'),
+            headingSelector: 'h1, h2, h3, h4'
         });
 
         // modify the toc link href to support Chinese.
@@ -788,7 +788,7 @@ bax<span class="token punctuation">.</span>set_ylabel<span class="token punctuat
 
         // modify the heading title id to support Chinese.
         i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
+        $('#articleContent').children('h1, h2, h3, h4').each(function () {
             $(this).attr('id', tocHeading + (++i));
         });
 
