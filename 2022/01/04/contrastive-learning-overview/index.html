@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Summary of git, vhlk&#39;s blog">
+    <meta name="keywords" content="Contrastive Learning Overview, vhlk&#39;s blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Summary of git | vhlk&#39;s blog</title>
+    <title>Contrastive Learning Overview | vhlk&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -291,12 +291,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Summary of git</h1>
+                    <h1 class="description center-align post-title">Contrastive Learning Overview</h1>
                 </div>
             </div>
         </div>
@@ -412,8 +412,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Git/">
-                                <span class="chip bg-color">Git</span>
+                            <a href="/tags/Self-Supervised-Learning/">
+                                <span class="chip bg-color">Self Supervised Learning</span>
+                            </a>
+                        
+                            <a href="/tags/Contrastive-Learning/">
+                                <span class="chip bg-color">Contrastive Learning</span>
                             </a>
                         
                     </div>
@@ -424,8 +428,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E5%B0%8F%E8%AF%AD%E7%A7%8D/" class="post-category">
-                                小语种
+                            <a href="/categories/Deep-Learning/" class="post-category">
+                                Deep Learning
                             </a>
                         
                     </div>
@@ -437,7 +441,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-01-02
+                    2022-01-04
                 </div>
                 
 
@@ -446,7 +450,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    91
                 </div>
                 
 
@@ -466,79 +470,8 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="学习网站："><a href="#学习网站：" class="headerlink" title="学习网站："></a>学习网站：</h1><ul>
-<li><p><a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600">Git教程 - 廖雪峰的官方网站 (liaoxuefeng.com)</a></p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="http://git-scm.com/">Git (git-scm.com)</a></p>
-</li>
-</ul>
-<h1 id="Git简介"><a href="#Git简介" class="headerlink" title="Git简介"></a>Git简介</h1><ol>
-<li><p>是目前世界上最先进的分布式版本控制系统</p>
-</li>
-<li><p>是用C语言开发的</p>
-</li>
-<li><p>是分布式版本控制系统，不需要联网</p>
-</li>
-<li><p>可以安装在Linux, macOS, Solaris, Windows, Raspberry Pi</p>
-</li>
-</ol>
-<h1 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h1><pre class="line-numbers language-git" data-language="git"><code class="language-git">git config --global user.name <span class="token string">"Your Name"</span>
-git config --global user.email <span class="token string">"email@example.com"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<p>在git上添加github的<strong>账号名</strong>和<strong>邮箱地址</strong>。</p>
-<h1 id="Git创建版本库"><a href="#Git创建版本库" class="headerlink" title="Git创建版本库"></a>Git创建版本库</h1><p>初始化一个Git仓库，使用<code>git init</code>命令。</p>
-<p>添加文件到Git仓库，分两步：</p>
-<ol>
-<li>使用命令<code>git add &lt;file&gt;</code>，注意，可反复多次使用，添加多个文件；</li>
-<li>使用命令<code>git commit -m &lt;message&gt;</code>，完成</li>
-</ol>
-<h1 id="Git查看状态"><a href="#Git查看状态" class="headerlink" title="Git查看状态"></a>Git查看状态</h1><ul>
-<li><p>要随时掌握工作区的状态，使用<code>git status</code>命令。</p>
-</li>
-<li><p>如果<code>git status</code>告诉你有文件被修改过，用<code>git diff</code>可以查看修改内容。</p>
-</li>
-</ul>
-<h1 id="版本回退"><a href="#版本回退" class="headerlink" title="版本回退"></a>版本回退</h1><ul>
-<li><p><code>HEAD</code>指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令<code>git reset --hard commit_id</code>。</p>
-</li>
-<li><p>穿梭前，用<code>git log</code>可以查看提交历史，以便确定要回退到哪个版本。</p>
-</li>
-<li><p>要重返未来，用<code>git reflog</code>查看命令历史，以便确定要回到未来的哪个版本。</p>
-</li>
-</ul>
-<h1 id="工作区和暂存区"><a href="#工作区和暂存区" class="headerlink" title="工作区和暂存区"></a>工作区和暂存区</h1><h2 id="管理修改"><a href="#管理修改" class="headerlink" title="管理修改"></a>管理修改</h2><p>Git跟踪修改而非文件。</p>
-<h2 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h2><p>场景1：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令<code>git checkout -- file</code>。撤销后的版本为最近一次<code>git add</code>或者<code>git commit</code>的结果。</p>
-<p>场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令<code>git reset HEAD &lt;file&gt;</code>把暂存区的修改撤销掉，就回到了场景1，第二步按场景1操作。</p>
-<p>场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/897013573512192">版本回退</a>一节，不过前提是没有推送到远程库。</p>
-<h2 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h2><p>命令<code>git rm</code>用于删除版本库中的一个文件，然后<code>git commit</code>生效。如果一个文件已经被提交到版本库，那么你永远不用担心误删，使用<code>git checkout -- &lt;file_name&gt;</code>回退，但是要小心，你只能恢复文件到最新版本，你会丢失<strong>最近一次提交后你修改的内容</strong>。</p>
-<p><code>git checkout</code>其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。</p>
-<h1 id="远程仓库"><a href="#远程仓库" class="headerlink" title="远程仓库"></a>远程仓库</h1><h2 id="添加远程库"><a href="#添加远程库" class="headerlink" title="添加远程库"></a>添加远程库</h2><p>要关联一个远程库，使用命令<code>git remote add origin git@server-name:path/repo-name.git</code>；</p>
-<p>关联一个远程库时必须给远程库指定一个名字，<code>origin</code>是默认习惯命名；</p>
-<p>关联后，使用命令<code>git push -u origin master</code>第一次推送master分支的所有内容；</p>
-<p>此后，每次本地提交后，只要有必要，就可以使用命令<code>git push origin master</code>推送最新修改；</p>
-<p>如果添加的时候地址写错了，或者就是想删除远程库，可以用<code>git remote rm &lt;name&gt;</code>命令。使用前，建议先用<code>git remote -v</code>查看远程库信息：</p>
-<pre class="line-numbers language-git" data-language="git"><code class="language-git">git remote -v
-origin  git@github.com:michaelliao/learn-git.git (fetch)
-origin  git@github.com:michaelliao/learn-git.git (push)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p>然后，根据名字删除，比如删除<code>origin</code>：</p>
-<pre class="line-numbers language-git" data-language="git"><code class="language-git">git remote rm origin<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<p>此处的“删除”其实是解除了本地和远程的绑定关系，并不是物理上删除了远程库。远程库本身并没有任何改动。要真正删除远程库，需要登录到GitHub，在后台页面找到删除按钮再删除。</p>
-<h2 id="从远程库克隆"><a href="#从远程库克隆" class="headerlink" title="从远程库克隆"></a>从远程库克隆</h2><p>要克隆一个仓库，首先必须知道仓库的地址，然后使用<code>git clone</code>命令克隆。</p>
-<p>Git支持多种协议，包括<code>https</code>，但<code>ssh</code>协议速度最快。</p>
-<h1 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h1><p>Git鼓励大量使用分支：</p>
-<p>查看分支：<code>git branch</code></p>
-<p>创建分支：<code>git branch &lt;name&gt;</code></p>
-<p>切换分支：<code>git checkout &lt;name&gt;</code>或者<code>git switch &lt;name&gt;</code></p>
-<p>创建+切换分支：<code>git checkout -b &lt;name&gt;</code>或者<code>git switch -c &lt;name&gt;</code></p>
-<p>合并某分支到当前分支：<code>git merge &lt;name&gt;</code></p>
-<p>删除分支：<code>git branch -d &lt;name&gt;</code></p>
-<h2 id="解决冲突"><a href="#解决冲突" class="headerlink" title="解决冲突"></a>解决冲突</h2><p>当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。</p>
-<p>解决冲突就是把Git合并失败的文件手动编辑为我们希望的内容，再提交。</p>
-<p>用<code>git log --graph</code>命令可以看到分支合并图。</p>
-<h2 id="分支管理策略"><a href="#分支管理策略" class="headerlink" title="分支管理策略"></a>分支管理策略</h2><h2 id="Bug分支"><a href="#Bug分支" class="headerlink" title="Bug分支"></a>Bug分支</h2><h2 id="Feature分支"><a href="#Feature分支" class="headerlink" title="Feature分支"></a>Feature分支</h2><h2 id="多人协作"><a href="#多人协作" class="headerlink" title="多人协作"></a>多人协作</h2><h2 id="Rebase"><a href="#Rebase" class="headerlink" title="Rebase"></a>Rebase</h2><h1 id="标签管理"><a href="#标签管理" class="headerlink" title="标签管理"></a>标签管理</h1><h2 id="创建标签"><a href="#创建标签" class="headerlink" title="创建标签"></a>创建标签</h2><h2 id="操作标签"><a href="#操作标签" class="headerlink" title="操作标签"></a>操作标签</h2><h1 id="Gitee"><a href="#Gitee" class="headerlink" title="Gitee"></a>Gitee</h1><p>用到再看</p>
-<h1 id="Git-Cheat-Sheet"><a href="#Git-Cheat-Sheet" class="headerlink" title="Git Cheat Sheet"></a>Git Cheat Sheet</h1><img title="" src="https://liaoxuefeng.gitee.io/resource.liaoxuefeng.com/git/git-cheat-sheet.png" alt="" data-align="center" width="807">
+                <p>今天看了B站李沐老师出品bryanZhu老师讲的视频：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV19S4y1M7hm?spm_id_from=444.41.0.0">对比学习论文综述【论文精读】_哔哩哔哩_bilibili</a>，bryanZhu老师功底深厚，条理清晰，节奏感好。视频末对这14篇论文做了总结，故用PPT仿照画了个简陋的overiew，为后续细读论文提供一个清晰的脉络感。</p>
+<p><img src="/2022/01/04/contrastive-learning-overview/overview.png" alt="overview"></p>
 
                 
             </div>
@@ -565,7 +498,7 @@ origin  git@github.com:michaelliao/learn-git.git (push)<span aria-hidden="true" 
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://vhlk76.github.io/2022/01/02/git/">https://vhlk76.github.io/2022/01/02/git/</a>
+                    <a href="https://vhlk76.github.io/2022/01/04/contrastive-learning-overview/">https://vhlk76.github.io/2022/01/04/contrastive-learning-overview/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -603,8 +536,12 @@ origin  git@github.com:michaelliao/learn-git.git (push)<span aria-hidden="true" 
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Git/">
-                                    <span class="chip bg-color">Git</span>
+                                <a href="/tags/Self-Supervised-Learning/">
+                                    <span class="chip bg-color">Self Supervised Learning</span>
+                                </a>
+                            
+                                <a href="/tags/Contrastive-Learning/">
+                                    <span class="chip bg-color">Contrastive Learning</span>
                                 </a>
                             
                         </div>
@@ -648,9 +585,64 @@ origin  git@github.com:michaelliao/learn-git.git (push)<span aria-hidden="true" 
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/01/04/contrastive-learning-overview/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="Contrastive Learning Overview">
+                        
+                        <span class="card-title">Contrastive Learning Overview</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            An overview of modern contrastive learning
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-04
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Deep-Learning/" class="post-category">
+                                    Deep Learning
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Self-Supervised-Learning/">
+                        <span class="chip bg-color">Self Supervised Learning</span>
+                    </a>
+                    
+                    <a href="/tags/Contrastive-Learning/">
+                        <span class="chip bg-color">Contrastive Learning</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/01/03/plt-pei-he-brokenaxes-shi-xian-zuo-biao-zhou-jie-duan/">
                     <div class="card-image">
@@ -668,9 +660,9 @@ origin  git@github.com:michaelliao/learn-git.git (push)<span aria-hidden="true" 
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-01-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -688,56 +680,6 @@ origin  git@github.com:michaelliao/learn-git.git (push)<span aria-hidden="true" 
                     
                     <a href="/tags/plt/">
                         <span class="chip bg-color">plt</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/01/02/git/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Summary of git">
-                        
-                        <span class="card-title">Summary of git</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            Git学习笔记
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-02
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%B0%8F%E8%AF%AD%E7%A7%8D/" class="post-category">
-                                    小语种
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Git/">
-                        <span class="chip bg-color">Git</span>
                     </a>
                     
                 </div>

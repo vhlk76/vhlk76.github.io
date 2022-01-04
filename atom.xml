@@ -6,7 +6,7 @@
   <link href="https://vhlk76.github.io/atom.xml" rel="self"/>
   
   <link href="https://vhlk76.github.io/"/>
-  <updated>2022-01-03T06:39:16.193Z</updated>
+  <updated>2022-01-04T08:34:10.602Z</updated>
   <id>https://vhlk76.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Contrastive Learning Overview</title>
+    <link href="https://vhlk76.github.io/2022/01/04/contrastive-learning-overview/"/>
+    <id>https://vhlk76.github.io/2022/01/04/contrastive-learning-overview/</id>
+    <published>2022-01-04T08:11:06.000Z</published>
+    <updated>2022-01-04T08:34:10.602Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;今天看了B站李沐老师出品bryanZhu老师讲的视频：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="Deep Learning" scheme="https://vhlk76.github.io/categories/Deep-Learning/"/>
+    
+    
+    <category term="Self Supervised Learning" scheme="https://vhlk76.github.io/tags/Self-Supervised-Learning/"/>
+    
+    <category term="Contrastive Learning" scheme="https://vhlk76.github.io/tags/Contrastive-Learning/"/>
+    
+  </entry>
+  
+  <entry>
     <title>plt配合brokenaxes实现坐标轴截断</title>
     <link href="https://vhlk76.github.io/2022/01/03/plt-pei-he-brokenaxes-shi-xian-zuo-biao-zhou-jie-duan/"/>
     <id>https://vhlk76.github.io/2022/01/03/plt-pei-he-brokenaxes-shi-xian-zuo-biao-zhou-jie-duan/</id>
     <published>2022-01-03T04:29:02.000Z</published>
-    <updated>2022-01-03T06:39:16.193Z</updated>
+    <updated>2022-01-04T07:59:53.792Z</updated>
     
     
       
@@ -46,7 +73,7 @@
     <link href="https://vhlk76.github.io/2022/01/02/git/"/>
     <id>https://vhlk76.github.io/2022/01/02/git/</id>
     <published>2022-01-02T02:27:36.000Z</published>
-    <updated>2022-01-03T06:55:31.195Z</updated>
+    <updated>2022-01-04T08:07:18.652Z</updated>
     
     
       
@@ -59,6 +86,8 @@
       
     
     
+    
+    <category term="小语种" scheme="https://vhlk76.github.io/categories/%E5%B0%8F%E8%AF%AD%E7%A7%8D/"/>
     
     
     <category term="Git" scheme="https://vhlk76.github.io/tags/Git/"/>
