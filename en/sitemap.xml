@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://example.com/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-02T19:51:03+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -11,13 +11,21 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ar"
-                href="https://example.com/ar/"
+                hreflang="en"
+                href="https://example.com/"
+                />
+  </url><url>
+    <loc>https://example.com/post/</loc>
+    <lastmod>2024-10-02T19:51:03+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://example.com/zh-cn/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/"
+                href="https://example.com/post/"
                 />
   </url><url>
     <loc>https://example.com/archives/</loc>
@@ -45,11 +53,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ar"
-                href="https://example.com/ar/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="en"
                 href="https://example.com/categories/"
                 />
@@ -66,24 +69,6 @@
     <loc>https://example.com/p/markdown-syntax-guide/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://example.com/post/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://example.com/zh-cn/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://example.com/ar/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/post/"
-                />
-  </url><url>
     <loc>https://example.com/categories/syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -93,11 +78,6 @@
                 rel="alternate"
                 hreflang="zh-cn"
                 href="https://example.com/zh-cn/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://example.com/ar/tags/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -113,16 +93,6 @@
   </url><url>
     <loc>https://example.com/p/placeholder-text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://example.com/ar/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://example.com/p/placeholder-text/"
-                />
   </url><url>
     <loc>https://example.com/tags/tag-with-whitespaces/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
