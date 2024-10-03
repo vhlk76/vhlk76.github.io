@@ -118,5 +118,17 @@
     <loc>http://localhost:1313/search/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/test/</loc>
+  </url><url>
+    <loc>http://localhost:1313/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%84%9F/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="http://localhost:1313/zh-cn/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%84%9F/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%84%9F/"
+                />
   </url>
 </urlset>
