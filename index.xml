@@ -7,7 +7,30 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>vhlk76</copyright>
-        <lastBuildDate>Wed, 02 Oct 2024 22:47:18 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 03 Oct 2024 20:33:35 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>什么是快剪店</title>
+        <link>https://example.com/p/kuai_jian_dian/</link>
+        <pubDate>Thu, 03 Oct 2024 20:33:35 +0800</pubDate>
+        
+        <guid>https://example.com/p/kuai_jian_dian/</guid>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;“剪发新模式，只要15元，60岁以上只要10元！”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;明天国庆节要出门玩，所以今天晚上去剪个头发。好久不在国内剪发了，去小区附近常去的那家店一看，普通价50，会员价35。我心里一嘀咕：又是骗老子开会员，这tm也太贵了。也就过去了一年多的时间吧，现在国内剪个头发价格如此夸张？！我突然想重拾我在苏黎世的时候自己学剪发的手艺了。我尝试过一次，一顿操作下，给自己的后脑剪了个参差不齐，虽然也向室友要到了夸夸。但我洗头时摸了摸后脑勺，顿时一惊，第二天又找了个理发店修了一下。（感谢我的室友鼓励而不是嘲笑我）&lt;/p&gt;
+&lt;p&gt;言归正传，我当然不可能去剪50元的头，在我的印象中，剪头发这种事情，20最多了。碰巧最近在外面吃饭经过一家“快剪店”，门口的大喇叭让我想起了小时候最喜欢唱的《小薇》，一首街边揽客神曲。虽然我不太了解什么是“快剪”，而且我一向觉得便宜没好货，贵的东西价格只有贵，但不妨一试嘛。（其实是我不知道哪里还有理发店，死宅就是这样的啦）&lt;/p&gt;
+&lt;p&gt;门口正摆着了一个扫码下单取号的机器，我选了个最便宜的，15元。好家伙，真的便宜，看着老板还挺潮的样子，我打算试试。&lt;/p&gt;
+&lt;p&gt;到我了，我立马展现出一副社会二流子的模样，和老板攀谈起来，后来发现原来这人也是打工的。这是一家在（可能）江浙沪的剪发连锁店（居然还有这种东西？剪头发也可以搞这种薄利多销的模式，我还挺感兴趣的）。门面位置还不错，人流量挺大，店里每天大概有上百人来剪头发，平均客单价20左右，店里有两个人负责箭头，没有收银（门口的机器），月租多少没说（他说他也不知道，毕竟不是老板，只是个打工仔）。他说他是四川人，来这边打工。我阅历比较少，以为他老婆在这，否则不能理解为什么一个四川人要来浙江打工。现在想想，都是讨生活罢了，离家远一点也没事，生活有盼头更重要吧。我没他想不想以后回家去工作，没敢问，我怕他在四川没有家，也不想问这种太显而易见的问题。&lt;/p&gt;
+&lt;p&gt;剪完发型还不错，图就不发了。&lt;/p&gt;
+&lt;p&gt;回到家不仅思考起来，快剪店这样的店为什么以前没有，为什么这几年开始兴起了？我觉得可能有以下几点原因：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;疫情这几年，老百姓兜里没钱了，消费能力下降，这种快剪店满足了消费者对理发的直接诉求——便宜地把头发剪了&lt;/li&gt;
+&lt;li&gt;可以用便宜的价格把其他理发的客源吸引过来，客户粘性比较强。比如我这种能省则省的性格，大概率以后就在这家店剪发了。便宜、快速、好看、省钱，在产品的实用属性上全方位地拉满了。&lt;/li&gt;
+&lt;li&gt;人力资源便宜，并且理发这个行业没有门槛，剪发师傅是经过培训就上岗的，就像一个机器一样招待一个又一个客人。如果是一个新手，离了这家店，就没有了可以锻炼理发技术的地方，而自己单干又没有这个资本。其实程序员又何尝不是如此呢，拿着体面的工资，在大厂里拧着螺丝，不断地“锻炼”自己的本领，但离了公司之后又很少有人能有单干的资本（或技术/胆量）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;每一种行业模式都是在特定的时代背景下诞生的，后疫情时代，薄利多销成了小买卖还能盈利的一种模式。诶嘿，是不是和胖东来有点像。消费降级，物美价廉成了小老板姓的首选。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>文章名</title>
         <link>https://example.com/p/%E6%96%87%E7%AB%A0%E5%90%8D/</link>
         <pubDate>Wed, 02 Oct 2024 22:47:18 +0800</pubDate>
@@ -113,6 +136,14 @@
 &lt;p&gt;Learn more and contribute on &lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 </description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://example.com/_index.zh-cn/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/_index.zh-cn/</guid>
+        <description></description>
         </item>
         <item>
         <title>Links</title>
