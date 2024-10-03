@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Categories on 演示站点</title>
-        <link>http://localhost:1313/zh-cn/categories/</link>
-        <description>Recent content in Categories on 演示站点</description>
+        <title>Categories on vhlk76</title>
+        <link>https://example.com/zh-cn/categories/</link>
+        <description>Recent content in Categories on vhlk76</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>vhlk76</copyright><atom:link href="http://localhost:1313/zh-cn/categories/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>vhlk76</copyright>
+        <lastBuildDate>Thu, 03 Oct 2024 20:33:35 +0800</lastBuildDate><atom:link href="https://example.com/zh-cn/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>所思所感</title>
+        <link>https://example.com/zh-cn/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%84%9F/</link>
+        <pubDate>Thu, 03 Oct 2024 20:33:35 +0800</pubDate>
+        
+        <guid>https://example.com/zh-cn/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%84%9F/</guid>
+        <description></description>
+        </item>
+        
     </channel>
 </rss>

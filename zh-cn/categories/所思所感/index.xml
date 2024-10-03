@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>vhlk76</title>
-        <link>https://example.com/zh-cn/</link>
-        <description>Recent content on vhlk76</description>
+        <title>所思所感 on vhlk76</title>
+        <link>https://example.com/zh-cn/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%84%9F/</link>
+        <description>Recent content in 所思所感 on vhlk76</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>vhlk76</copyright>
-        <lastBuildDate>Thu, 03 Oct 2024 20:33:35 +0800</lastBuildDate><atom:link href="https://example.com/zh-cn/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 03 Oct 2024 20:33:35 +0800</lastBuildDate><atom:link href="https://example.com/zh-cn/categories/%E6%89%80%E6%80%9D%E6%89%80%E6%84%9F/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>什么是快剪店</title>
         <link>https://example.com/zh-cn/p/kuai_jian_dian/</link>
         <pubDate>Thu, 03 Oct 2024 20:33:35 +0800</pubDate>
@@ -28,24 +28,6 @@
 &lt;li&gt;人力资源便宜，并且理发这个行业没有门槛，剪发师傅是经过培训就上岗的，就像一个机器一样招待一个又一个客人。如果是一个新手，离了这家店，就没有了可以锻炼理发技术的地方，而自己单干又没有这个资本。其实程序员又何尝不是如此呢，拿着体面的工资，在大厂里拧着螺丝，不断地“锻炼”自己的本领，但离了公司之后又很少有人能有单干的资本（或技术/胆量）。&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;每一种行业模式都是在特定的时代背景下诞生的，后疫情时代，薄利多销成了小买卖还能盈利的一种模式。诶嘿，是不是和胖东来有点像。消费降级，物美价廉成了小老板姓的首选。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>文章名</title>
-        <link>https://example.com/zh-cn/p/%E6%96%87%E7%AB%A0%E5%90%8D/</link>
-        <pubDate>Wed, 02 Oct 2024 22:47:18 +0800</pubDate>
-        
-        <guid>https://example.com/zh-cn/p/%E6%96%87%E7%AB%A0%E5%90%8D/</guid>
-        <description>&lt;p&gt;这是一篇文章&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>关于</title>
-        <link>https://example.com/zh-cn/%E5%85%B3%E4%BA%8E/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://example.com/zh-cn/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
 </description>
         </item>
         
