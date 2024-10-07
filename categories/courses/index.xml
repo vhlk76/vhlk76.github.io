@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Courses on vhlk76</title>
+        <link>https://example.com/categories/courses/</link>
+        <description>Recent content in Courses on vhlk76</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <copyright>vhlk76</copyright>
+        <lastBuildDate>Sun, 06 Oct 2024 19:41:57 +0800</lastBuildDate><atom:link href="https://example.com/categories/courses/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>ISL - Module1</title>
+        <link>https://example.com/p/isl-lab1/</link>
+        <pubDate>Sun, 06 Oct 2024 19:41:57 +0800</pubDate>
+        
+        <guid>https://example.com/p/isl-lab1/</guid>
+        <description>&lt;h2 id=&#34;prerequisite&#34;&gt;Prerequisite
+&lt;/h2&gt;&lt;h3 id=&#34;part-i&#34;&gt;Part I
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;The first quarter of this course (Information Security Lab) is about model-checking security protocols. We&amp;rsquo;ll learn some topics relavant to Formal Methods for Information Security.&lt;/p&gt;
+&lt;p&gt;As for the lab, we&amp;rsquo;ll gain practical experience using Tamarin, a SOTA tool on model verification.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;EMV&lt;/strong&gt; means Europay, Mastercard and Visa.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;message_constructors_sample&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;message_constructors_sample.png&#34; alt=&#34;message_constructors_sample&#34; width=60%&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;attacks_on_NSPK&lt;/strong&gt;: The Attacker can disguise as Alice to set up communication with Bob smoothly. Upon connection built, Attacker knows all the information Alice sends.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;attacks.png&#34; width=60% alt=&#34;attacks&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;h3 id=&#34;part-ii&#34;&gt;Part II
+&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;This part we&amp;rsquo;ll learn how to model security &lt;strong&gt;protocols&lt;/strong&gt; in Tamarin, how to &lt;strong&gt;formalize security properties&lt;/strong&gt; and how to &lt;strong&gt;construct proofs&lt;/strong&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;a-good-video-for-tamarin-prover-introduction&#34;&gt;A good video for Tamarin Prover Introduction
+&lt;/h2&gt;&lt;div class=&#34;video-wrapper&#34;&gt;
+    &lt;iframe loading=&#34;lazy&#34; 
+            src=&#34;https://www.youtube.com/embed/XptJG19hDcQ&#34; 
+            allowfullscreen 
+            title=&#34;YouTube Video&#34;
+    &gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
+
+</description>
+        </item>
+        
+    </channel>
+</rss>
