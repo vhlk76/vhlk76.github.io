@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on vhlk76</title>
-        <link>https://example.com/post/</link>
-        <description>Recent content in Posts on vhlk76</description>
+        <title>Manacher on vhlk76</title>
+        <link>https://example.com/tags/manacher/</link>
+        <description>Recent content in Manacher on vhlk76</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <copyright>vhlk76</copyright>
-        <lastBuildDate>Tue, 04 Feb 2025 14:26:56 +0100</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 04 Feb 2025 14:26:56 +0100</lastBuildDate><atom:link href="https://example.com/tags/manacher/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Manacher_algorithm</title>
         <link>https://example.com/p/manacher_algorithm/</link>
         <pubDate>Tue, 04 Feb 2025 14:26:56 +0100</pubDate>
@@ -136,124 +136,6 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;总结&#34;&gt;总结
 &lt;/h2&gt;&lt;p&gt;Manacher算法的核心思想是通过预处理来减少重复计算，通过记录最长子串的中心和半长度，可以在O(1)时间内判断某个子串是否为回文串。同时，通过在字符串中插入特殊字符，可以统一处理奇偶长度的回文串。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Docker 初识</title>
-        <link>https://example.com/p/docker-%E5%88%9D%E8%AF%86/</link>
-        <pubDate>Thu, 12 Dec 2024 13:39:49 +0100</pubDate>
-        
-        <guid>https://example.com/p/docker-%E5%88%9D%E8%AF%86/</guid>
-        <description>&lt;h1 id=&#34;docker的三个基本概念&#34;&gt;docker的三个基本概念
-&lt;/h1&gt;&lt;h2 id=&#34;image&#34;&gt;Image
-&lt;/h2&gt;&lt;h3 id=&#34;分层存储&#34;&gt;分层存储
-&lt;/h3&gt;&lt;p&gt;镜像并非是像一个&lt;code&gt;ISO&lt;/code&gt;那样的打包文件，镜像只是一个虚拟的概念，其实际体现并非由一个文件组成，而是由一组文件系统组成，或者说，由多层文件系统联合组成。&lt;/p&gt;
-&lt;p&gt;镜像构建时，会一层层构建，前一层是后一层的基础。每一层构建完就不会再发生改变，后一层上的任何改变只发生在自己这一层。因此，在构建镜像的时候，每一层尽量只包含该层需要添加的东西，任何额外的东西应该在该层构建结束前清理掉。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Container
-镜像（Image）和容器（Container）的关系，就像是面向对象程序设计中的 类 和 实例 一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;前面讲过镜像使用的是分层存储，容器也是如此。每一个容器运行时，是以镜像为基础层，在其上创建一个当前容器的存储层，我们可以称这个为容器运行时读写而准备的存储层为 容器存储层。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Repository
-镜像构建完成后，可以很容易的在当前宿主机上运行，但是，如果需要在其它服务器上使用这个镜像，我们就需要一个集中的存储、分发镜像的服务，Docker Registry 就是这样的服务。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;一个 Docker Registry 中可以包含多个 仓库（Repository）；每个仓库可以包含多个 标签（Tag）；每个标签对应一个镜像。&lt;/p&gt;
-&lt;p&gt;通常，一个仓库会包含同一个软件不同版本的镜像，而标签就常用于对应该软件的各个版本。我们可以通过 &amp;lt;仓库名&amp;gt;:&amp;lt;标签&amp;gt; 的格式来指定具体是这个软件哪个版本的镜像。如果不给出标签，将以 latest 作为默认标签。&lt;/p&gt;
-&lt;p&gt;以 Ubuntu 镜像 为例，ubuntu 是仓库的名字，其内包含有不同的版本标签，如，16.04, 18.04。我们可以通过 ubuntu:16.04，或者 ubuntu:18.04 来具体指定所需哪个版本的镜像。如果忽略了标签，比如 ubuntu，那将视为 ubuntu:latest。&lt;/p&gt;
-&lt;h1 id=&#34;使用镜像&#34;&gt;使用镜像
-&lt;/h1&gt;&lt;h2 id=&#34;获取镜像&#34;&gt;获取镜像
-&lt;/h2&gt;&lt;p&gt;&lt;code&gt;$ docker pull [选项] [Docker Registry 地址[:端口号]/]仓库名[:标签]&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-gdscript3&#34; data-lang=&#34;gdscript3&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;$&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;docker&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;pull&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ubuntu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;18.04&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mf&#34;&gt;18.04&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Pulling&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;from&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;library&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ubuntu&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;mi&#34;&gt;92&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dc2a97ff99&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Pull&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;complete&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;be13a9d27eb8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Pull&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;complete&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;c8299583700a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Pull&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;complete&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Digest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;sha256&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bc3ae6596938cb0d9e5ac51a1152ec9dcac2a1c50829c74abd9c4361e321b26&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;Status&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Downloaded&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;newer&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;image&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ubuntu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;18.04&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;docker&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;io&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;library&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ubuntu&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;18.04&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;$ docker run -it --rm ubuntu:18.04 bash
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;root@e7009c6ce357:/# cat /etc/os-release
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;NAME=&amp;#34;Ubuntu&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;VERSION=&amp;#34;18.04.1 LTS (Bionic Beaver)&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ID=ubuntu
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ID_LIKE=debian
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PRETTY_NAME=&amp;#34;Ubuntu 18.04.1 LTS&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;VERSION_ID=&amp;#34;18.04&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;HOME_URL=&amp;#34;https://www.ubuntu.com/&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;SUPPORT_URL=&amp;#34;https://help.ubuntu.com/&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;BUG_REPORT_URL=&amp;#34;https://bugs.launchpad.net/ubuntu/&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;PRIVACY_POLICY_URL=&amp;#34;https://www.ubuntu.com/legal/terms-and-policies/privacy-policy&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;VERSION_CODENAME=bionic
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;UBUNTU_CODENAME=bionic
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
-        </item>
-        <item>
-        <title>什么是快剪店</title>
-        <link>https://example.com/p/kuai_jian_dian/</link>
-        <pubDate>Thu, 03 Oct 2024 20:33:35 +0800</pubDate>
-        
-        <guid>https://example.com/p/kuai_jian_dian/</guid>
-        <description>&lt;img src="https://example.com/p/kuai_jian_dian/567.jpg" alt="Featured image of post 什么是快剪店" /&gt;&lt;blockquote&gt;
-&lt;p&gt;“剪发新模式，只要15元，60岁以上只要10元！”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;明天国庆节要出门玩，所以今天晚上去剪个头发。好久不在国内剪发了，去小区附近常去的那家店一看，普通价50，会员价35。我心里一嘀咕：又是骗老子开会员，这tm也太贵了。也就过去了一年多的时间吧，现在国内剪个头发价格如此夸张？！我突然想重拾我在苏黎世的时候自己学剪发的手艺了。我尝试过一次，一顿操作下，给自己的后脑剪了个参差不齐，虽然也向室友要到了夸夸。但我洗头时摸了摸后脑勺，顿时一惊，第二天又找了个理发店修了一下。（感谢我的室友鼓励而不是嘲笑我）&lt;/p&gt;
-&lt;p&gt;言归正传，我当然不可能去剪50元的头，在我的印象中，剪头发这种事情，20最多了。碰巧最近在外面吃饭经过一家“快剪店”，门口的大喇叭让我想起了小时候最喜欢唱的《小薇》，一首街边揽客神曲。虽然我不太了解什么是“快剪”，而且我一向觉得便宜没好货，贵的东西价格只有贵，但不妨一试嘛。（其实是我不知道哪里还有理发店，死宅就是这样的啦）&lt;/p&gt;
-&lt;p&gt;门口正摆着了一个扫码下单取号的机器，我选了个最便宜的，15元。好家伙，真的便宜，看着老板还挺潮的样子，我打算试试。&lt;/p&gt;
-&lt;p&gt;到我了，我立马展现出一副社会二流子的模样，和老板攀谈起来，后来发现原来这人也是打工的。这是一家在（可能）江浙沪的剪发连锁店（居然还有这种东西？剪头发也可以搞这种薄利多销的模式，我还挺感兴趣的）。门面位置还不错，人流量挺大，店里每天大概有上百人来剪头发，平均客单价20左右，店里有两个人负责箭头，没有收银（门口的机器），月租多少没说（他说他也不知道，毕竟不是老板，只是个打工仔）。他说他是四川人，来这边打工。我阅历比较少，以为他老婆在这，否则不能理解为什么一个四川人要来浙江打工。现在想想，都是讨生活罢了，离家远一点也没事，生活有盼头更重要吧。我没他想不想以后回家去工作，没敢问，我怕他在四川没有家，也不想问这种太显而易见的问题。&lt;/p&gt;
-&lt;p&gt;剪完发型还不错，图就不发了。&lt;/p&gt;
-&lt;p&gt;回到家不仅思考起来，快剪店这样的店为什么以前没有，为什么这几年开始兴起了？我觉得可能有以下几点原因：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;疫情这几年，老百姓兜里没钱了，消费能力下降，这种快剪店满足了消费者对理发的直接诉求——便宜地把头发剪了&lt;/li&gt;
-&lt;li&gt;可以用便宜的价格把其他理发的客源吸引过来，客户粘性比较强。比如我这种能省则省的性格，大概率以后就在这家店剪发了。便宜、快速、好看、省钱，在产品的实用属性上全方位地拉满了。&lt;/li&gt;
-&lt;li&gt;人力资源便宜，并且理发这个行业没有门槛，剪发师傅是经过培训就上岗的，就像一个机器一样招待一个又一个客人。如果是一个新手，离了这家店，就没有了可以锻炼理发技术的地方，而自己单干又没有这个资本。其实程序员又何尝不是如此呢，拿着体面的工资，在大厂里拧着螺丝，不断地“锻炼”自己的本领，但离了公司之后又很少有人能有单干的资本（或技术/胆量）。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;每一种行业模式都是在特定的时代背景下诞生的，后疫情时代，薄利多销成了小买卖还能盈利的一种模式。诶嘿，是不是和胖东来有点像。消费降级，物美价廉成了小老板姓的首选。&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>文章名</title>
-        <link>https://example.com/p/%E6%96%87%E7%AB%A0%E5%90%8D/</link>
-        <pubDate>Wed, 02 Oct 2024 22:47:18 +0800</pubDate>
-        
-        <guid>https://example.com/p/%E6%96%87%E7%AB%A0%E5%90%8D/</guid>
-        <description>&lt;p&gt;This is an article.&lt;/p&gt;
 </description>
         </item>
         
